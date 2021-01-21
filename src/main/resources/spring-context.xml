@@ -3,4 +3,11 @@
        xmlns="http://www.springframework.org/schema/beans"
         xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--    <bean id="personService" class="ru.education.lessons.service.PersonServiceImpl">-->
+<!--        <constructor-arg name="dao" ref="personDao"/>-->
+<!--    </bean>-->
+    <bean id="personBean" class="ru.education.lessons.domain.Person">
+        <constructor-arg value="Kola" />
+        <constructor-arg value="25" />
+    </bean>
 </beans>
